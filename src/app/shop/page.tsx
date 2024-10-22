@@ -9,13 +9,14 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import ProductCardPanel from "@/components/Panels/ProductCardPanel";
+import CoffeeCardPanel from "@/components/Panels/CoffeeCardPanel";
 
 export default function Shop() {
-
-    /*const [products, setProducts] = useState<Products[]>([])
-    const [categories, setCategories] = useState<string[]>([])*/
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+    const [selectedCategory, setSelectedCategory] = useState<string | null>("All Categories")
+    const [cartItems, setCartItems] = useState<Coffee[]>([]);
+    const addToCart = (product: Coffee) => {
+        setCartItems([...cartItems, product]);
+    };
 
     return (
         <div className="container mx-auto p-4 sm:p-6 lg:p-8">
@@ -29,21 +30,22 @@ export default function Shop() {
                         </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
-                        <DropdownMenuItem onSelect={() => setSelectedCategory(null)}>
+                        <DropdownMenuItem onSelect={() => setSelectedCategory("All Categories")}>
                             All Categories
                         </DropdownMenuItem>
-                        {/*{categories.map((category) => (
-                            <DropdownMenuItem key={category} onSelect={() => setSelectedCategory(category)}>
-                                {category}
-                            </DropdownMenuItem>
-                        ))}*/}
+                        <DropdownMenuItem onSelect={() => setSelectedCategory("cafe")}>
+                            cafe
+                        </DropdownMenuItem>
+                        <DropdownMenuItem onSelect={() => setSelectedCategory("artesania")}>
+                            artesania
+                        </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
 
             {/* Product Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                <ProductCardPanel />
+                <CoffeeCardPanel selectedCategory={selectedCategory} onAddToCart={addToCart} />
             </div>
         </div>
     )

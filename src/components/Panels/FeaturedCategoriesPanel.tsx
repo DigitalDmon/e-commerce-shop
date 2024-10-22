@@ -1,17 +1,37 @@
-import {FeaturedCategoriesCard} from "@/components/Cards/FeaturedCategoriesCard";
+'use client'
 
-export default async function FeaturedCategoriesPanel() {
+import { FeaturedCategoriesCard } from "@/components/Cards/FeaturedCategoriesCard";
+import { useEffect, useState } from "react";
 
-    const categories: [] = await fetch("https://fakestoreapi.com/products/categories").then(res => res.json())
+export default function FeaturedCategoriesPanel() {
+    const [uniqueCategories, setUniqueCategories] = useState<string[]>([]);
+
+    useEffect(() => {
+        const fetchCoffees = async () => {
+            const response = await fetch('/coffees.json');
+            const coffeeGrain: Coffee[] = await response.json();
+
+            const categorySet = new Set<string>();
+            coffeeGrain.forEach(coffee => {
+                if (coffee.category) {
+                    categorySet.add(coffee.category);
+                }
+            });
+
+            setUniqueCategories(Array.from(categorySet));
+        };
+
+        fetchCoffees();
+    }, []);
 
     return (
         <>
-            {categories.map((category, index) => (
+            {uniqueCategories.map((category, index) => (
                 <FeaturedCategoriesCard
-                    key={index} 
-                    category={category}
+                    key={index}
+                    category={category}  // Enviar cada opción de molienda como una categoría individual
                 />
             ))}
         </>
-    )
+    );
 }

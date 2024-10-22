@@ -1,27 +1,9 @@
+import PresentationCardPanel from "@/components/Panels/PresentationCardPanel";
+
 export default function About() {
     return (
-        <div className="p-24">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi aperiam consequatur
-                corporis deserunt dignissimos distinctio esse facere illo impedit iste itaque iusto, molestias nam non
-                placeat sed sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi
-                aperiam consequatur corporis deserunt dignissimos distinctio esse facere illo impedit iste itaque iusto,
-                molestias nam non placeat sed sunt.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi aperiam consequatur
-                corporis deserunt dignissimos distinctio esse facere illo impedit iste itaque iusto, molestias nam non
-                placeat sed sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi
-                aperiam consequatur corporis deserunt dignissimos distinctio esse facere illo impedit iste itaque iusto,
-                molestias nam non placeat sed sunt.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi aperiam consequatur
-                corporis deserunt dignissimos distinctio esse facere illo impedit iste itaque iusto, molestias nam non
-                placeat sed sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid animi
-                aperiam consequatur corporis deserunt dignissimos distinctio esse facere illo impedit iste itaque iusto,
-                molestias nam non placeat sed sunt.
-            </p>
+        <div className="px-24 py-12 lg:flex gap-2">
+            <PresentationCardPanel />
         </div>
     )
 }

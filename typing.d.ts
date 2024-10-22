@@ -1,16 +1,21 @@
-type Products = {
+type Coffee = {
     id: number;
-    title: string;
-    price: number;
+    name: string;
     description: string;
+    price: number;
     category: string;
-    image: string;
-    rating: {
-        rate: number;
-        count: number;
-    }
+    image_url: string;
+    grind_option: string[];
 }
 
-type ProductsResponse = {
-    product: Products;
+type CoffeeResponse = {
+    coffee: Coffee;
+}
+
+type TeamInfo = {
+    avatar: string;
+    name: string;
+    role: string;
+    description: string;
+    details: string[];
 }

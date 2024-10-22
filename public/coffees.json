@@ -1,0 +1,166 @@
+[
+    {
+        "id": 1,
+        "name": "Red Bourbon Natural",
+        "description": "Bolsa de café de especialidad de Bourbon Natural de Finca Damarli Estate, en Volcancito, Chiriquí, Panama",
+        "price": 24.00,
+        "category": "cafe",
+        "grind_option": [
+            "Grano",
+            "Molido"
+        ],
+        "image_url": "https://panamacoffeeclub.com/cdn/shop/files/98EDEF8D-701A-41B6-88FC-900E7BF90C75_1024x1024.jpg?v=1720289906"
+    },
+    {
+        "id": 2,
+        "name": "Blend Geisha & Catuai Natural",
+        "description": "Cultivado en las tierras fértiles de Cañas Verdes, en las montañas de Chiriquí, Panamá",
+        "price": 25.00,
+        "category": "cafe",
+        "grind_option": [
+            "Grano",
+            "Molido"
+        ],
+        "image_url": "https://panamacoffeeclub.com/cdn/shop/files/delmesSEPT_1024x1024.png?v=1727904242"
+    },
+    {
+        "id": 3,
+        "name": "Blend Caturra-Catuai Washed",
+        "description": "Café de la finca Bambito Estate, cosechado en la región de Volcán en la Provincia de Chiriquí, Panamá",
+        "price": 18.00,
+        "category": "cafe",
+        "grind_option": [
+            "Grano",
+            "Molido"
+        ],
+        "image_url": "https://panamacoffeeclub.com/cdn/shop/files/Screenshot2024-10-11at12.45.13PM_1024x1024.png?v=1728670408"
+    },
+    {
+        "id": 4,
+        "name": "Catuai ASD",
+        "description": "Cultivado en las tierras fértiles de Cañas Verdes, en las montañas de Chiriquí",
+        "price": 18.00,
+        "category": "cafe",
+        "grind_option": [
+            "Grano",
+            "Molido"
+        ],
+        "image_url": "https://panamacoffeeclub.com/cdn/shop/files/Screenshot2024-09-02at4.48.50PM_1024x1024.png?v=1725731809"
+    },
+    {
+        "id": 5,
+        "name": "Cafelino - Catuai Bliss",
+        "description": "Cultivado en la Finca Santa Elena, situada en las laderas de la emblemática montaña Piedra de Lino, dentro del valle de Boquete en la provincia de Chiriquí, Panamá.",
+        "price": 18.00,
+        "category": "cafe",
+        "grind_option": [
+            "Grano",
+            "Molido"
+        ],
+        "image_url": "https://panamacoffeeclub.com/cdn/shop/files/Screenshot2023-12-06at10.07.44AM_1024x1024.png?v=1701875280"
+    },
+    {
+        "id": 6,
+        "name": "Geisha Anaerobic",
+        "description": "Café de la finca Bernardina,   Renacimiento, en la Provincia de Chiriquí,Panamá.",
+        "price": 30.00,
+        "category": "cafe",
+        "grind_option": [
+            "Grano",
+            "Molido"
+        ],
+        "image_url": "https://panamacoffeeclub.com/cdn/shop/files/Screenshot2023-12-21at1.27.39PM_1024x1024.png?v=1703183268"
+    },
+    {
+        "id": 7,
+        "name": "PCC Breakfast Roast",
+        "description": "El Breakfast Roast es tu café ideal para todas tus mañanas! Es un café variedad Catuai proceso lavado.",
+        "price": 14.00,
+        "category": "cafe",
+        "grind_option": [
+            "Grano",
+            "Molido"
+        ],
+        "image_url": "https://panamacoffeeclub.com/cdn/shop/files/DSC06236_1024x1024.jpg?v=1697136708"
+    },
+    {
+        "id": 8,
+        "name": "Mola de Flor Rosada",
+        "description": "Mola en tonos rosados, blanco y negro en forma de flor.",
+        "price": 20.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/products/05-MC24_600x.jpg?v=1677234791"
+    },
+    {
+        "id": 9,
+        "name": "Mola de Tortuga",
+        "description": "Mola diseño tortuga. Medida 13 de alto x 13 de largo.",
+        "price": 65.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/products/05-MP18_600x.jpg?v=1677232825"
+    },
+    {
+        "id": 10,
+        "name": "Sombrero Pintao",
+        "description": "Sombrero Pintao once vueltas, talla 22. Totalmente a mano.",
+        "price": 175.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/products/26-S03O_600x.png?v=1677265638"
+    },
+    {
+        "id": 11,
+        "name": "Camisola",
+        "description": "Pieza elaborada con tejidos a mano en color blanco. Talla S",
+        "price": 175.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/files/camisola2_600x.png?v=1683376753"
+    },
+    {
+        "id": 12,
+        "name": "Camisa Indígena Guna",
+        "description": "Blusas elaboradas por las Gunas.",
+        "price": 125.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/files/VestidoGuna2_600x.png?v=1683377359"
+    },
+    {
+        "id": 13,
+        "name": "Cutarra",
+        "description": "Sandalia confeccionada a mano en cuero. Color chocolate.",
+        "price": 30.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/products/CH04_600x.png?v=1677240735"
+    },
+    {
+        "id": 14,
+        "name": "Peineta",
+        "description": "Peineta en tonos rojos con perlas blancas, mariposas en tonos dorados y hojas verdes.",
+        "price": 20.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/products/96-EP25_600x.png?v=1677097774"
+    },
+    {
+        "id": 15,
+        "name": "Tambores",
+        "description": "Trío de tambores para adultos. caja, repicador y pujador. 23 pulgadas de alto. Cuero blanco.",
+        "price": 375.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/products/96-TB03A_600x.png?v=1676912289"
+    },
+    {
+        "id": 16,
+        "name": "Tembleque",
+        "description": "Adorno para el cabello (banana) a juego con los aretes, tonos crema y dorado, enjaretada en alambre dorado y canutillos dorados.",
+        "price": 25.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/products/96-EP29_1_600x.png?v=1675789724"
+    },
+    {
+        "id": 17,
+        "name": "Chaquiras",
+        "description": "Collar de chaquira. Elaborado a mano por los artesanos Emberá.",
+        "price": 212.00,
+        "category": "artesania",
+        "image_url": "https://artesanosdepanama.com/cdn/shop/products/01-CH13_600x.png?v=1676494955"
+    }
+]
