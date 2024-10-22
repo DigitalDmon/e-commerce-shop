@@ -4,8 +4,6 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Menu, Search, ShoppingCart, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
 import {
     Sheet,
     SheetContent,
@@ -15,17 +13,8 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 
-interface Coffee {
-    id: number;
-    name: string;
-    description: string;
-    price: number;
-    image_url: string;
-}
-
 export default function Navbar() {
 
-    const [cartItems, setCartItems] = useState<Coffee[]>([])
     const [isCartOpen, setIsCartOpen] = useState(false)
     const [, setIsMobileMenuOpen] = useState(false)
 
@@ -66,29 +55,7 @@ export default function Navbar() {
                             </Link>
                             <Button variant="ghost" size="icon" onClick={() => setIsCartOpen(!isCartOpen)}>
                                 <ShoppingCart size={20} />
-                                {cartItems.length > 0 && (
-                                    <Badge className="absolute -top-2 -right-2">{cartItems.length}</Badge>
-                                )}
                             </Button>
-                            {isCartOpen && (
-                                <div className="absolute right-0 mt-2 w-64 bg-white rounded-md shadow-lg z-10">
-                                    <div className="p-4">
-                                        <h2 className="text-lg font-semibold mb-2">Carrito</h2>
-                                        {cartItems.length === 0 ? (
-                                            <p>El carrito está vacío</p>
-                                        ) : (
-                                            <ul>
-                                                {cartItems.map((item, index) => (
-                                                    <li key={index} className="flex justify-between items-center mb-2">
-                                                        <span>{item.name}</span>
-                                                        <span>${item.price.toFixed(2)}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )}
-                                    </div>
-                                </div>
-                            )}
                         </div>
                     </div>
 
@@ -122,9 +89,6 @@ export default function Navbar() {
                                             </Button>
                                             <Button variant="outline" size="icon" onClick={() => setIsCartOpen(!isCartOpen)}>
                                                 <ShoppingCart size={20} />
-                                                {cartItems.length > 0 && (
-                                                    <Badge className="absolute -top-2 -right-2">{cartItems.length}</Badge>
-                                                )}
                                             </Button>
                                         </div>
                                     </SheetDescription>
