@@ -23,22 +23,11 @@ interface Coffee {
     image_url: string;
 }
 
-interface NavbarProps {
-    cartItems: Coffee[];
-}
-
 export default function Navbar() {
 
     const [cartItems, setCartItems] = useState<Coffee[]>([])
     const [isCartOpen, setIsCartOpen] = useState(false)
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-    const addToCart = (product: Coffee) => {
-        setCartItems([...cartItems, product])
-    }
-
-    // const removeFromCart = (productId: number) => {
-    //     setCartItems(cartItems.filter(item => item.id !== productId))
-    // }
+    const [, setIsMobileMenuOpen] = useState(false)
 
     const navItems = [
         { name: "Inicio", href: "/" },
