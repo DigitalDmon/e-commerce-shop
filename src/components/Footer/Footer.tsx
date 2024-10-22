@@ -2,7 +2,6 @@ import Link from "next/link"
 import { Facebook, Instagram, Twitter } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 
 const navItems = [
     { name: "Inicio", href: "/" },
@@ -37,7 +36,7 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold text-gray-900">Únete a nuestra comunidad</h3>
                         <p className="text-gray-600">Suscríbete y recibe novedades y promociones.</p>
                         <form className="flex space-x-2">
-                            <Input type="email" placeholder="Tu correo electrónico" className="flex-grow" />
+                            <input type="email" placeholder="Tu correo electrónico" className="flex-grow" />
                             <Button type="submit">Suscribirse</Button>
                         </form>
                         <div className="flex space-x-4 mt-4">
